@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "Gruntfuggly.todo-tree",
+    "jock.svg",
+    "esbenp.prettier-vscode",
+    "kamikillerto.vscode-colorize"
+  ]
+}

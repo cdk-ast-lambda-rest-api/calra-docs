@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Chrome Standalone",
+      "url": "http://localhost:8080",
+      "sourceMapPathOverrides": {
+        "webpack:///landing/src/*": "${workspaceFolder}/src/*"
+      }
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Debug Firefox Standalone",
+      "url": "http://localhost:8080",
+      "pathMappings": [
+        {
+          "url": "webpack://landing/src/",
+          "path": "${workspaceFolder}/src/"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug build:webpack",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": [
+        "${workspaceFolder}/node_modules/webpack/bin/webpack",
+        "--mode=production"
+      ],
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.webpack.json",
+        "NODE_ENV": "production"
+      },
+      "sourceMaps": true,
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
