@@ -5,9 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "cross-env USE_SIMPLE_CSS_MINIFIER=true docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "cross-env USE_SIMPLE_CSS_MINIFIER=true docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -32,6 +32,7 @@
     "@types/react": "^18.3.2",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-mdx": "^3.1.5",
@@ -57,7 +58,7 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   },
   "packageManager": "yarn@4.2.2"
 }

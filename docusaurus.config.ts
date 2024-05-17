@@ -3,21 +3,22 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "CDK Ast Lambda Rest-API ",
+  tagline: "Python Rest-API made easy",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://cdk-ast-lambda-rest-api.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
+  organizationName: "cdk-ast-lambda-rest-api", // Usually your GitHub org/user name.
+  projectName: "cdk-ast-lambda-rest-api.github.io", // Usually your repo name.
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
@@ -63,21 +64,21 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "CDK Ast Lambda Rest-API",
       logo: {
-        alt: "My Site Logo",
+        alt: "CDK Ast Lambda Rest-API Logo",
         src: "img/logo.svg",
       },
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/cdk-ast-lambda-rest-api/calra-lambda",
           label: "GitHub",
           position: "right",
         },
@@ -90,25 +91,8 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Docusaurus",
+              to: "/docs/category/docusaurus",
             },
           ],
         },
@@ -121,12 +105,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/cdk-ast-lambda-rest-api/calra-lambda",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CDK Ast Lambda Rest-API. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
