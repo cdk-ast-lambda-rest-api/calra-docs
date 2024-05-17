@@ -4801,6 +4801,7 @@ __metadata:
     react-dom: "npm:^18.0.0"
     typescript: "npm:~5.2.2"
     webpack: "npm:^5.91.0"
+    yaml-loader: "npm:^0.8.1"
   languageName: unknown
   linkType: soft
 
@@ -9106,6 +9107,13 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 10c0/f01d8f972d894cd7638bc338e9ef5ddb86f7b208ce177a36d718eac96ec86638a6efa17d0221b10073e64b45edc2ce15340db9380b1f5d5c5d000cbc517dc111
+  languageName: node
+  linkType: hard
+
+"javascript-stringify@npm:^2.0.1":
+  version: 2.1.0
+  resolution: "javascript-stringify@npm:2.1.0"
+  checksum: 10c0/374e74ebff29b94de78da39daa6e530999c58a145aeb293dc21180c4584459b14d9e5721d9bc6ed4eba319c437ef0145c157c946b70ecddcff6668682a002bcc
   languageName: node
   linkType: hard
 
@@ -15860,6 +15868,17 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 10c0/2286b5e8dbfe22204ab66e2ef5cc9bbb1e55dfc873bbe0d568aa943eb255d131890dfd5bf243637273d31119b870f49c18fcde2c6ffbb7a7a092b870dc90625a
+  languageName: node
+  linkType: hard
+
+"yaml-loader@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "yaml-loader@npm:0.8.1"
+  dependencies:
+    javascript-stringify: "npm:^2.0.1"
+    loader-utils: "npm:^2.0.0"
+    yaml: "npm:^2.0.0"
+  checksum: 10c0/4bb4789c8ace38067ff68a67fba27626c0793f4d001a485d2334bff7c4fed73ee1696bee287949a834c3387655df2e27e3d7c52ad7d3c20cd5c5ecbff320ff57
   languageName: node
   linkType: hard
 

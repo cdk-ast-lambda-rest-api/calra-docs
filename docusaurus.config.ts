@@ -44,6 +44,8 @@ const config: Config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
+          // Use shared authors.yml file
+          authorsMapPath: "../authors.yml",
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.

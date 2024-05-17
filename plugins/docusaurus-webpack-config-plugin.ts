@@ -7,7 +7,17 @@ module.exports = function () {
     name: "loaders",
     configureWebpack(): Partial<Configuration> {
       return {
+        // Add ESLint Plugin to build
         plugins: [new ESLintPlugin()],
+        // Allow importing yaml files
+        module: {
+          rules: [
+            {
+              test: /\.ya?ml$/,
+              use: "yaml-loader",
+            },
+          ],
+        },
       };
     },
   };
