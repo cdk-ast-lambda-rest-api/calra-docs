@@ -28,7 +28,10 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: ["./plugins/docusaurus-webpack-config-plugin.ts"],
+  plugins: [
+    "./plugins/docusaurus-webpack-config-plugin.ts",
+    "@orama/plugin-docusaurus-v3",
+  ],
   presets: [
     [
       "classic",
