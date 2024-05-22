@@ -1,0 +1,27 @@
+@function px-to-rem($fontAsPx) {
+    @return math.div($fontAsPx, 16) * 1rem;
+}
+  
+@function strip-unit($value) {
+    @return math.div($value, ($value * 0 + 1));
+}
+  
+@function fluid($min-vw, $max-vw, $min-size, $max-size) {
+$u1: unit($min-vw);
+$u2: unit($max-vw);
+$u3: unit($min-size);
+$u4: unit($max-size);
+
+@if $u1 == $u2 and $u3 == $u4 {
+    @return max(
+    #{$min-size},
+    min(
+        #{$max-size},
+        calc(
+        #{$min-size} + #{strip-unit($max-size - $min-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        )
+    )
+    );
+}
+}

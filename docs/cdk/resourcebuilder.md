@@ -31,6 +31,8 @@ From **AWS CDK** official [documentation](https://docs.aws.amazon.com/cdk/api/v2
 The amount of memory, in MB, that is allocated to your Lambda function. Lambda uses this value to proportionally allocate the amount of CPU power. For more information, see Resource Model in the AWS Lambda Developer Guide. Default: 128
 :::
 
+EJEMPLO BLOQUE CODIGO
+
 Parameters:
 
 - memory_size (int):
@@ -43,6 +45,8 @@ Parameters:
 
 - role (iam.Role):
 
+EJEMPLO BLOQUE CODIGO
+
 ### set_default_runtime
 
 description
@@ -50,6 +54,8 @@ description
 Parameters:
 
 - runtime (Runtime):
+
+EJEMPLO BLOQUE CODIGO
 
 ### set_default_timeout
 

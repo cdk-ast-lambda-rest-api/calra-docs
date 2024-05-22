@@ -3,8 +3,9 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "CDK Ast Lambda Rest-API ",
-  tagline: "Python Rest-API made easy",
+  title: "Calra",
+  tagline:
+    "CDK Ast Lambda Rest-API Python Rest-API made easy Python Rest-API made Python Rest-API made Python Rest-API made Python Rest-API made Python Rest-API made Python Rest-API made Python Rest-API made ",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -30,6 +31,7 @@ const config: Config = {
     locales: ["en"],
   },
   plugins: [
+    "@docusaurus/theme-live-codeblock",
     "./plugins/docusaurus-webpack-config-plugin.ts",
     "@orama/plugin-docusaurus-v3",
   ],
@@ -64,7 +66,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "CDK Ast Lambda Rest-API",
+      title: "CALRA",
       logo: {
         alt: "CDK Ast Lambda Rest-API Logo",
         src: "img/logo.svg",
