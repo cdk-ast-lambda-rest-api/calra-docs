@@ -29,21 +29,24 @@ function HomepageHeader() {
             <div className={css.buttonGroup}>
               <Link
                 className="button button--primary button--lg"
-                to="/docs/getting-started"
+                // to="/docs/getting-started"
               >
                 Getting Started
               </Link>
 
               <Link
                 className="button button--secondary button--lg"
-                to="pathname:///sd"
+                // to="pathname:///sd"
               >
                 API Reference
               </Link>
             </div>
 
             <div className={css.buttonGroup}>
-              <Link className="button button--secondary button--lg" to="sd">
+              <Link
+                className="button button--secondary button--lg"
+                // to="sd"
+              >
                 Upgrade to v6
               </Link>
 
@@ -52,7 +55,7 @@ function HomepageHeader() {
                   "button button--secondary button--lg",
                   css.supportButton
                 )}
-                to="a"
+                // to="a"
               >
                 Support us
               </Link>

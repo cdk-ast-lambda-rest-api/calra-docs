@@ -71,7 +71,9 @@ export default function HomepageFeatures(): JSX.Element {
               `}
             </CodeBlock>
             <p className={styles.docsLink}>
-              <Link to="/docs/v6/getting-started/">
+              <Link
+              // to="/docs/v6/getting-started/"
+              >
                 {/* Getting Started <ArrowRight size="1.25em" /> */}
               </Link>
             </p>
