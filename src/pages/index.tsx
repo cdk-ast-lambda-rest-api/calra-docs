@@ -3,26 +3,64 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Heading from "@theme/Heading";
-
-import styles from "./index.module.css";
+import css from "./index.module.css";
 
 function HomepageHeader() {
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   };
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/category/docusaurus"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <header className={clsx("hero hero--primary", css.heroBanner)}>
+      <div className={clsx("container", css.heroBannerContainer)}>
+        <img src="/img/logo.svg" className="container-logo" alt="" />
+        <div className={css.textContainer}>
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className={css.heroSubtitle}>{siteConfig.tagline}</p>
+          <div className={css.buttons}>
+            <div className={css.buttonGroup}>
+              <Link
+                className="button button--primary button--lg"
+                // to="/docs/getting-started"
+              >
+                Getting Started
+              </Link>
+
+              <Link
+                className="button button--secondary button--lg"
+                // to="pathname:///sd"
+              >
+                API Reference
+              </Link>
+            </div>
+
+            <div className={css.buttonGroup}>
+              <Link
+                className="button button--secondary button--lg"
+                // to="sd"
+              >
+                Upgrade to v6
+              </Link>
+
+              <Link
+                className={clsx(
+                  "button button--secondary button--lg",
+                  css.supportButton
+                )}
+                // to="a"
+              >
+                Support us
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </header>
