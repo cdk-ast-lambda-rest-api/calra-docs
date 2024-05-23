@@ -1,8 +1,8 @@
 {
   "label": "CDK Package",
-  "position": 1,
+  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Learn about CALRA's CDK Package and how to best use it"
+    "description": "Learn about Calra's CDK Package and how to best set up a builder."
   }
 }

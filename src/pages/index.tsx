@@ -47,7 +47,7 @@ function HomepageHeader() {
                 className="button button--secondary button--lg"
                 // to="sd"
               >
-                Upgrade to v6
+                todo
               </Link>
 
               <Link
@@ -57,7 +57,7 @@ function HomepageHeader() {
                 )}
                 // to="a"
               >
-                Support us
+                todo2
               </Link>
             </div>
           </div>

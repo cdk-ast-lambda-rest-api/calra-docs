@@ -3,7 +3,7 @@ sidebar_label: "About"
 sidebar_position: 1
 ---
 
-# CDK Ast Lambda Rest API - Lambda Packge (CALRA)
+# CALRA's Lambda Package
 
 ## A library for AWS API Gateway/Lambda Proxy Integration
 

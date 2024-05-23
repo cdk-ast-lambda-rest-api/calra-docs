@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import CodeBlock from "@theme/CodeBlock";
 import { trim } from "@site/models/strings";
 import Link from "@docusaurus/Link";
+import { ArrowRight } from "react-feather";
 
 // type FeatureItem = {
 //   title: string;
@@ -71,10 +72,8 @@ export default function HomepageFeatures(): JSX.Element {
               `}
             </CodeBlock>
             <p className={styles.docsLink}>
-              <Link
-              // to="/docs/v6/getting-started/"
-              >
-                {/* Getting Started <ArrowRight size="1.25em" /> */}
+              <Link to="/docs/getting-started/">
+                Getting Started <ArrowRight size="1.25em" />
               </Link>
             </p>
           </div>
@@ -90,7 +89,7 @@ export default function HomepageFeatures(): JSX.Element {
             </CodeBlock>
             <p className={styles.docsLink}>
               <Link to="/docs/cdk/resourcebuilder/">
-                {/* Resource Builder <ArrowRight size="1.25em" /> */}
+                Resource Builder <ArrowRight size="1.25em" />
               </Link>
             </p>
           </div>
@@ -106,8 +105,8 @@ export default function HomepageFeatures(): JSX.Element {
             `}
             </CodeBlock>
             <p className={styles.docsLink}>
-              <Link to="">
-                {/* Querying Models <ArrowRight size="1.25em" /> */}
+              <Link to="/docs/cdk/resourcebuilder/">
+                Discover options <ArrowRight size="1.25em" />
               </Link>
             </p>
           </div>
