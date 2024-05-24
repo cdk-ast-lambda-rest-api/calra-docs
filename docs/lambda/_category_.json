@@ -1,6 +1,6 @@
 {
   "label": "Lambda Package",
-  "position": 2,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Learn about CALRA's Lambad Package and how to customize your Lambda Function."

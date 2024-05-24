@@ -29,7 +29,7 @@ function HomepageHeader() {
             <div className={css.buttonGroup}>
               <Link
                 className="button button--primary button--lg"
-                // to="/docs/getting-started"
+                to="/docs/introduction"
               >
                 Getting Started
               </Link>
@@ -71,8 +71,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title}`}
+      description="CDK Rest API made easy" //"Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
       <main>

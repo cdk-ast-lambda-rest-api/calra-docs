@@ -7,7 +7,8 @@ sidebar_position: 1
 
 ## A library for AWS API Gateway/Lambda Proxy Integration
 
-CALRA allows simplified resource creation for AWS Lambda functions and Rest API resources by using decorators and setting a builder with default, common or custom values for IAM Roles, Runtimes, Timeouts, Layers, Environment values, etc. This project relies abstract syntactic trees (ast) to analyze the code of your lambda functions and generate infraestructure accordingly.
+Calra CDK assumes the responsibility of creating the infraestructure for your API Gateway resources and Lambda Functions, also taking charge of creating the association between these resources and these Lambda Functions, so the routing is taken care of as well.
+This API provides a ResourceBuilder class that a developer can take advantage of to set the default, common and custom settings we talked about in the [Getting Started](/docs/getting-started) page. However do not worry, we will revisit these concepts in this section.
 
 ### Installation
 
@@ -80,3 +81,7 @@ class CalraExampleStack(Stack):
         builder.build(self, root_resource, lambda_path, print_tree=True)
 
 ```
+
+:::info
+In the next page, all the methods exposed by this API via the **ResourceBuilder** class itself will be thoroughly explained, with examples provided for each option.
+:::
