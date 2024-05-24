@@ -79,25 +79,12 @@ export default function HomepageFeatures(): JSX.Element {
           </div>
 
           <div className={styles.usageSection}>
-            <h2>Define Builder instance</h2>
+            <h2>Stack-side define Builder instance and build options</h2>
             <CodeBlock language="js">
               {trim`
               from calra_cdk import ResourceBuilder
 
               builder = ResourceBuilder()
-            `}
-            </CodeBlock>
-            <p className={styles.docsLink}>
-              <Link to="/docs/cdk/resourcebuilder/">
-                Resource Builder <ArrowRight size="1.25em" />
-              </Link>
-            </p>
-          </div>
-
-          <div className={styles.usageSection}>
-            <h2>Add build options</h2>
-            <CodeBlock language="js">
-              {trim`
               builder.set_default_timeout(Duration.Seconds(10))
               builder.add_custom_environment("DB_PORT",30001)
 
@@ -105,8 +92,33 @@ export default function HomepageFeatures(): JSX.Element {
             `}
             </CodeBlock>
             <p className={styles.docsLink}>
-              <Link to="/docs/cdk/resourcebuilder/">
-                Discover options <ArrowRight size="1.25em" />
+              <Link to="/docs/cdk/about">
+                Resource Builder <ArrowRight size="1.25em" />
+              </Link>
+            </p>
+          </div>
+
+          <div className={styles.usageSection}>
+            <h2>Personalize Lambda Functions</h2>
+            <CodeBlock language="js">
+              {trim`
+              from calra_lambda import *
+              import json
+
+              @GET('/dogs')
+              def lambda_handler(event, context):
+                  response = {
+                      'statusCode': 200,
+                      'body': json.dumps({
+                          'message': 'Hello World from /dogs!'
+                      })
+                  }
+                  return response
+            `}
+            </CodeBlock>
+            <p className={styles.docsLink}>
+              <Link to="/docs/lambda/decorators">
+                More about Decorators <ArrowRight size="1.25em" />
               </Link>
             </p>
           </div>
