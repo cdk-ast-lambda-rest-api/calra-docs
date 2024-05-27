@@ -7,19 +7,11 @@ sidebar_position: 1
 
 ## A library for AWS API Gateway/Lambda Proxy Integration
 
-Calra CDK assumes the responsibility of creating the infraestructure for your API Gateway resources and Lambda Functions, also taking charge of creating the association between these resources and these Lambda Functions, so the routing is taken care of as well.
+Calra CDK assumes the responsibility of creating the infraestructure for API Gateway resources and Lambda Functions, also taking charge of creating the association between these resources and these Lambda Functions, so the routing is taken care of as well.
+
 This API provides a ResourceBuilder class that a developer can take advantage of to set the default, common and custom settings we talked about in the [Getting Started](/docs/getting-started) page. However do not worry, we will revisit these concepts in this section.
 
-### Installation
-
-`calra_cdk` is available from PyPI as `calra-cdk`:
-
-> pip install calra-cdk
-
-Installation of [calra-lambda](https://pypi.org/project/calra-lambda/) is also required as a dependency for your lambda functions, since it provides the definition of decorators used within this module.
-You can as well rely on the [Simple CARLA example](https://github.com/cdk-ast-lambda-rest-api/calra-example-simple) repository to get started.
-
-### Example
+### Importing Calra within your AWS CDK Application.
 
 ```python
     import calra_cdk
@@ -27,9 +19,11 @@ You can as well rely on the [Simple CARLA example](https://github.com/cdk-ast-la
     from calra_cdk import ResourceBuilder
 ```
 
+After having imported the module, a developer can start setting up the ResourceBuilder instance that will be used to exploit all of Carla's features.
+
 ### Builder instance
 
-You may define a builder using calra_cdk's constructor `ResourceBuilder`. This method returns an instance of the class that will be used to configure and create your Lambda Functions. By default, no parameters are required to instantiate the object, but custom options may be passed in advanced use cases.
+You may define a builder using calra_cdk's constructor `ResourceBuilder`. By default, no parameters are required to instantiate the object, but custom options may be passed in advanced use cases.
 
 ```python
     from calra_cdk import ResourceBuilder
@@ -57,7 +51,7 @@ Lastly you can setup custom environments, layers, security groups, vpcs a Lambda
 
 ### Building
 
-Assuming you have already instantiated a Builder, configured it and ready to deploy your stack, then simply define the directory of your Lambda Functions and build!
+Assuming you have already instantiated a Builder, configured it and ready to deploy your stack, then simply define the directory of your Lambda Functions and invoke the **`build`** method!
 
 Note: For a Lambda Function to be recognised and built, it has to have a decorator specifying the HTTP method it responds to. Again, the [Simple CARLA example](https://github.com/cdk-ast-lambda-rest-api/calra-example-simple) repository will provide a firm example of a builder setting and proper lambda annotation using decorators defined in the [Lambda](/docs/category/lambda-package) package.
 

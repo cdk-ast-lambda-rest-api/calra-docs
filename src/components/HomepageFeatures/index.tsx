@@ -117,7 +117,7 @@ export default function HomepageFeatures(): JSX.Element {
             `}
             </CodeBlock>
             <p className={styles.docsLink}>
-              <Link to="/docs/lambda/decorators">
+              <Link to="/docs/lambda/about">
                 More about Decorators <ArrowRight size="1.25em" />
               </Link>
             </p>

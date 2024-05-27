@@ -94,8 +94,8 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Docusaurus",
-              to: "/docs/category/docusaurus",
+              label: "Calra",
+              to: "/docs/getting-started",
             },
           ],
         },
