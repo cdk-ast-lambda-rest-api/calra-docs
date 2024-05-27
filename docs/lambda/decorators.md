@@ -90,5 +90,5 @@ def cat_handler(event, context):
 ```
 
 :::danger
-You should never add the same **configuration decorator** twice to a Lambda Handler twice. For options that can receive multiple arguments, such as security_group, layer and environment, use the multiple arguments or list as a parameter for a single decorator.
+You should never add the same **configuration decorator** to a Lambda Handler twice. For options that can receive multiple arguments, such as security_group, layer and environment, use the multiple arguments or list as a parameter for a single decorator.
 :::

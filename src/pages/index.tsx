@@ -36,18 +36,18 @@ function HomepageHeader() {
 
               <Link
                 className="button button--secondary button--lg"
-                // to="pathname:///sd"
+                to="/docs/category/cdk-package"
               >
-                API Reference
+                Calra CDK
               </Link>
             </div>
 
             <div className={css.buttonGroup}>
               <Link
                 className="button button--secondary button--lg"
-                // to="sd"
+                to="docs/category/lambda-package"
               >
-                todo
+                Calra Lambda
               </Link>
 
               <Link
@@ -55,9 +55,9 @@ function HomepageHeader() {
                   "button button--secondary button--lg",
                   css.supportButton
                 )}
-                // to="a"
+                to="https://github.com/cdk-ast-lambda-rest-api/calra-example-simple"
               >
-                todo2
+                GitHub
               </Link>
             </div>
           </div>
